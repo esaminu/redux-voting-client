@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import Results from './results';
 
-const mapStatetoProps = (state) => {
+const mapStateToProps = (state) => {
   return {
     pair: state.getIn(['vote','pair']),
     tally: state.getIn(['vote','tally']),
@@ -10,5 +10,5 @@ const mapStatetoProps = (state) => {
   };
 }
 
-const ResultsContainer = connect(mapStatetoProps)(Results);
+const ResultsContainer = connect(mapStateToProps)(Results);
 export default ResultsContainer;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {List,Map,fromJS} from 'immutable';
+import {Map,fromJS} from 'immutable';
 
 const reducer = (state = Map(),action) => {
   switch(action.type){
